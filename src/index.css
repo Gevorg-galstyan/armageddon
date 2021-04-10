@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    font-family: "Helvetica Neue", sans-serif !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+footer {
+    padding: 56px 0 0;
+}
+
+footer p {
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.distanceLabel {
+    cursor: pointer;
+}
+
+input.distanceRadio:checked + label {
+    font-weight: 600;
+}
+input.distanceRadio:not(:checked) + label {
+    text-decoration: underline;
+}
+
+.filters {
+    margin-top: 26px;
+    margin-bottom: 24px;
+}
+
+#onlyDanger {
+    display: none;
+}
+
+label[for='onlyDanger'] {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+}
+
+label[for='onlyDanger']::before {
+    content: '';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2px;
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+    border: 2px solid #000000;
+}
+
+#onlyDanger:checked + label[for='onlyDanger']::before {
+    content: '✔';
+}
+.filterDistance{
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+}
+.list-style-none{
+    list-style: none;
+}
+
+#videoPlayer {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.backLink{
+    position: fixed;
+    left: 20px;
+    top: 20px;
+    z-index: 999;
+}
+
+.color-white{
+    color: #fff !important;
+}
+
+@media all and (max-width: 996px){
+    .singleFilterContainer{
+        flex: 0 0 100%;
+    }
+}

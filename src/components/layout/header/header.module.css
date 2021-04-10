@@ -1,0 +1,76 @@
+.logo {
+    display: block !important;
+    max-width: 450px;
+    white-space: break-spaces !important;
+}
+
+.navLink {
+    padding: 12px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+    text-decoration-line: underline;
+    color: #000000 !important;
+}
+
+.navActive {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.generalHeading {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 48px;
+    color: #000000;
+}
+
+.pageDescription {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+}
+
+.headerContainer{
+    padding: 0 !important;
+    padding-top: 37px !important;
+    padding-bottom: 24px !important;
+    border-bottom: 1px solid #000000;
+}
+
+.destruct{
+    position: relative;
+}
+.destruct span{
+    content: '';
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 100%;
+    left: 100%;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #ff0000;
+    color: #fff;
+    font-size: 11px;
+}
+
+@media all and (max-width: 996px) {
+    .headerNavLinks{
+        align-items: center !important;
+        justify-content: flex-start;
+        flex-direction: row !important;
+    }
+    .navLink{
+        padding: 0;
+        margin-right: 24px;
+    }
+
+}
