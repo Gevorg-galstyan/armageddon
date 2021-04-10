@@ -27,10 +27,11 @@ function Destruction({asteroids, forDestruct, addToDestruct, destructAsteroids, 
 
     for (const key in asteroids) {
         const destructing = asteroids[key].filter(e => {
-            if (forDestruct.has(e.id)) {
-                e.date = key;
-                return e;
+            if (!forDestruct.has(e.id)) {
+               return false
             }
+            e.date = key;
+            return e;
         })
         asteroid = [...asteroid, ...destructing]
     }
